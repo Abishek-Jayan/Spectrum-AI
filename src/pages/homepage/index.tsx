@@ -1,11 +1,13 @@
 import React from "react";
 import NavBar from "../../components/NavBar";
+import Dashboard from "./components/Dashboard";
+
 class Homepage extends React.Component {
     render() {
-        return <>
+        return <div className="bg-black text-white">
         <NavBar />
-        {/* <Dashboard />         */}
-        </>
+        <Dashboard />        
+        </div>
     }
 }
 
