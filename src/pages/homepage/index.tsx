@@ -4,13 +4,17 @@ import Dashboard from "./components/Dashboard";
 import SplashTitle from "./components/SplashTitle";
 
 class Homepage extends React.Component {
-    render() {
-        return <div className="bg-black h-screen   text-white">
-        <NavBar />
-        <SplashTitle />
-        <Dashboard />        
+  render() {
+    return (
+      <>
+        <div className="flex flex-col">
+          <NavBar />
+          <SplashTitle />
+          <Dashboard />
         </div>
-    }
+      </>
+    );
+  }
 }
 
-export default Homepage
+export default Homepage;
